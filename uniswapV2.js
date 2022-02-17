@@ -9,11 +9,11 @@ const DAI = new uniswap.Token(chainId, tokenAddress, decimals);
 
 const USDC = new uniswap.Token(
     uniswap.ChainId.MAINNET,
-    "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",  //0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
+    "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",  //USDC 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48
     18
   );
 
-//0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984
+// UNI token address 0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984
 
 const getTokenWETHPairPrice = async function (token0) {
    const p =  await uniswap.Fetcher.fetchPairData(token0, uniswap.WETH[token0.chainId])
